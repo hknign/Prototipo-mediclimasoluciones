@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediclimasoluciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Inicio de sesión y registro -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Inicio de sesión / registro</h2>
+            <button id="guest-btn">Continuar como invitado</button>
+            <button id="login-btn">Iniciar sesión</button>
+            <button id="register-btn">Registrarse</button>
+        </div>
+    </div>
+
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#medical-products">Productos</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#" id="login-link">Inicio de sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Productos Médicos -->
+    <section id="medical-products">
+        <h2>Productos médicos</h2>
+        <div class="videos">
+            <h3>Videos</h3>
+            <!-- Videos -->
+            <video src="video1.mp4" controls></video>
+            <video src="video2.mp4" controls></video>
+        </div>
+        <div class="images">
+            <h3>Imagenes</h3>
+            <!-- Imágenes -->
+            <img src="product1.jpg" alt="Producto 1">
+            <img src="product2.jpg" alt="Producto 2">
+        </div>
+        <div class="cards">
+            <h3>Productos</h3>
+            <!-- Cards con productos -->
+            <div class="card">
+                <img src="product1.jpg" alt="Producto 1">
+                <p>Producto 1 - $10000</p>
+            </div>
+            <div class="card">
+                <img src="product2.jpg" alt="Producto 2">
+                <p>Producto 2 - $20000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="services">
+        <h2>Servicios</h2>
+        <div class="videos">
+            <h3>Videos</h3>
+            <!-- Videos -->
+            <video src="video3.mp4" controls></video>
+            <video src="video4.mp4" controls></video>
+        </div>
+        <div class="images">
+            <h3>Imagenes</h3>
+            <!-- Imágenes -->
+            <img src="service1.jpg" alt="Servicio 1">
+            <img src="service2.jpg" alt="Servicio 2">
+        </div>
+        <div class="cards">
+            <h3>Servicios</h3>
+            <!-- Cards con servicios -->
+            <div class="card">
+                <img src="service1.jpg" alt="Servicio 1">
+                <p>Servicio 1 - $50000</p>
+            </div>
+            <div class="card">
+                <img src="service2.jpg" alt="Servicio 2">
+                <p>Servicio 2 - $70000</p>
+            </div>
+        </div>
+        <!-- Funcionalidad de Horario -->
+        <div id="scheduler">
+            <h3>Horario de atención</h3>
+            <input type="date" id="date-picker">
+            <input type="time" id="time-picker">
+            <button id="schedule-btn">Horario</button>
+        </div>
+    </section>
+
+    <!-- Sección de Administrador -->
+    <section id="admin">
+        <h2>Panel de administrador</h2>
+        <div id="admin-scheduler">
+            <h3>escoger horas disponibles</h3>
+            <input type="date" id="admin-date-picker">
+            <input type="time" id="admin-time-picker">
+            <button id="set-hours-btn">escoger horas</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
